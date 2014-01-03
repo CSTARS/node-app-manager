@@ -1,0 +1,9 @@
+{
+  "name": "node-app-manager",
+  "version": "0.0.1",
+  "author": "Justin Merz <jrmerz@gmail.com>",
+  "description": "Manage Node.js / MongoDB applications",
+  "dependencies" : {
+    "request"         : "*"
+  }
+}
