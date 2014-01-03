@@ -1,0 +1,1 @@
+../lib/nodejs/bin/node index.js update-lib

@@ -1,1 +1,2 @@
-../lib/nodejs/bin/node index.js update-lib
+# update git repos
+../lib/nodejs/bin/node index.js update

@@ -4,6 +4,7 @@
   "author": "Justin Merz <jrmerz@gmail.com>",
   "description": "Manage Node.js / MongoDB applications",
   "dependencies" : {
-    "request"         : "*"
+    "request"         : "*",
+    "async"           : "*"
   }
 }
