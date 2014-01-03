@@ -38,7 +38,8 @@ echo "{\"node\":\"$version\"}" > versions.json
 
 # now use the node script to install mongo
 cd $loc
+$dir/nodejs/bin/npm install
 $dir/nodejs/bin/node index.js update-lib
 
-echo "Node.js and MongoDB have been installed in $dir\n"
+echo "Success! Node.js and MongoDB have been installed in $dir"
 echo "Use '../lib/nodejs/bin/node index.js update-lib' or 'update.sh' to keep libraries up-to-date";
