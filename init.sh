@@ -12,7 +12,7 @@ fi
 platform=$(uname | awk '{print tolower($0)}'); 
 
 # find the lastest version number so we know what file to download
-file=`curl $url | grep ".*node-.*-$platform-x86\.tar\.gz.*" | awk '{gsub("<[^>]*>", "")}1' | awk '{sub(/[ \t]+.*$/, "")}1'`;
+file=`curl $url | grep ".*node-.*-$platform-x64\.tar\.gz.*" | awk '{gsub("<[^>]*>", "")}1' | awk '{sub(/[ \t]+.*$/, "")}1'`;
 # grab latest node
 wget "$url$file"
 
@@ -33,7 +33,7 @@ mv $folder nodejs
 rm -rf $file
 
 # write versions.json file so node script know current version we are running
-version=$(echo $folder | awk '{sub("node-", "")}1' | awk '{sub("-x86", "")}1')
+version=$(echo $folder | awk '{sub("node-", "")}1' | awk '{sub("-x64", "")}1')
 echo "{\"node\":\"$version\"}" > versions.json
 
 # now use the node script to install mongo
